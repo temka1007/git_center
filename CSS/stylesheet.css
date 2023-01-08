@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    appearance: none;
+    
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+    width: 500px;
+}
+form {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 200px;
+}
+label,
+input,
+select,
+button,
+h2 {
+    width: 500px;
+}
+input[type="checkbox"] {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border: 1px solid gray;
+    /* Adjusts the position of the checkboxes on the text baseline */
+    vertical-align: -2px;
+    /* Set here so that Windows' High-Contrast Mode can override */
+    color: green;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "✔";
+    position: absolute;
+    font-size: 1.2em;
+    right: -1px;
+    top: -0.3em;
+    visibility: hidden;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    /* Use `visibility` instead of `display` to avoid recalculating layout */
+    visibility: visible;
+  }
+  
+  input[type="checkbox"]:disabled {
+    border-color: black;
+    background: #ddd;
+    color: gray;
+  }
+  span {
+    display: inline-block;
+    background: red;
+  }
+  
+  input[type="checkbox"] {
+    width: 100px;
+    height: 100px;
+  }
+  
