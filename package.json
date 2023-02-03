@@ -1,0 +1,27 @@
+{
+  "name": "git_center",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testCenter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temka1007/git_center.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temka1007/git_center/issues"
+  },
+  "homepage": "https://github.com/temka1007/git_center#readme",
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "2.8.3"
+  }
+}
