@@ -10,10 +10,10 @@ const emailRegExp =
 // Because we do not rely on CSS pseudo-class, we have to
 // explicitly set the valid/invalid class on our email field
 window.addEventListener("load", () => {
-  // Here, we test if the field is empty (remember, the field is not required)
-  // If it is not, we check if its content is a well-formed email address.
-  const isValid = email.value.length === 0 || emailRegExp.test(email.value);
-  email.className = isValid ? "valid" : "invalid";
+// Here, we test if the field is empty (remember, the field is not required)
+// If it is not, we check if its content is a well-formed email address.
+const isValid = email.value.length === 0 || emailRegExp.test(email.value);
+email.className = isValid ? "valid" : "invalid";
 });
 
 // This defines what happens when the user types in the field
